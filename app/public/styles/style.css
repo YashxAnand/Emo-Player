@@ -1,0 +1,225 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#home-btn{
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: display 0.5s;
+}
+.app-name{
+    width:90%;
+    margin-left:40%;
+}
+.header{
+    color: white;
+    display: flex;
+    background-color: rgba(1,1,1,0.8);
+    flex-direction: row;
+    height:10vh;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+.songs{
+    height: 80vh;
+    padding-top:10vh;
+}
+.song-and-mode{
+    display:flex;
+    color: white;
+    align-items:center;
+    flex-direction: row;
+    background-color: rgba(1,1,1,0.8);
+    height:5vh;
+    padding:0.5vh;
+    position:fixed;
+    bottom: 5vh;
+    left:0;
+    right:0;
+}
+#emotion-emoji{
+    position:fixed;
+    height:10vh;
+    width:10vh;
+    left:93vw;
+    bottom:13vh;
+    display:none;
+    z-index:99;
+}
+#song-name{
+    padding-left:3%;
+    width:75%;
+}
+#play-mode{
+    width:25%;
+    padding-left:6%;
+}
+.player {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding:0.5vh;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    border-radius: 10px;
+}
+
+.player > div{
+    margin: 0px 10px 0px 10px;
+}
+
+.volume-container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.slider-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+}
+
+.seek-slider{
+    width:100%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+    cursor: pointer;
+}
+
+body{
+    padding: 0px;
+    background-color: rgb(131, 77, 184);
+    background-size: cover;
+    background-attachment: fixed;
+    height:100%;
+
+    transition: background-color .5s;
+}
+
+.emotion_title{
+    margin:25px;
+}
+
+.song{
+    margin: 25px;
+    float: left;
+    width: 194px;
+    height: 200px;
+    transition: width 1s;
+    background-color: rgba(1, 3, 5,0.8);
+    padding: 15px;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 10%;
+    word-wrap: break-word;
+    overflow: hidden;
+    z-index: 2;
+
+}
+.song:hover{
+    width: 400px;
+}
+
+#data{
+    color: white;
+    float: left;
+    width: 160px;
+    height: 200px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 30px;	
+    z-index: 2;
+    font-size: 16px;
+    font-family: "Monotype Corsiva Italic";
+
+}
+
+#pic{
+    float: left;
+    background-size: cover;
+    height: 200px;
+    width: 190px;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 10%;
+    z-index: 2;
+}
+
+.play{
+    border-color: rgba(1,1,1,0.5);
+    background:transparent url("../images/play.png");
+    mix-blend-mode: multiply;
+    background-size: cover;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: 16%;
+    margin-top: 55%;
+    z-index: 2;
+}
+.play:focus{
+    outline: none;
+}
+.play:hover{
+    box-shadow: 0px 0px 5px 5px black;
+    border-color: black;
+    background-color: rgba(1,1,1);
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 2;
+
+}
+
+.add{
+    border-color: rgba(1,1,1,0.5);
+    background:transparent url("../images/add.png");
+    mix-blend-mode: multiply;
+    background-size: cover;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: 13%;
+    margin-top: 55%;
+    z-index: 2;
+}
+.add:focus{
+    outline: none;
+}
+.add:hover{
+    box-shadow: 0px 0px 5px 5px black;
+    border-color: black;
+    background-color: rgb(1,1,1);
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+
+}

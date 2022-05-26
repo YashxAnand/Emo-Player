@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  cnn-service:
+    build: ./cnn-server
+    volumes:
+      - ./cnn-server:/usr/src/app
+    ports:
+      - 3000:3000
+  node-service:
+    image: "node:17.9-alpine"
+    user: "node"
+    working_dir: /home/node/app
+    volumes:
+      - ./node-server:/home/node/app
+    ports:
+      - 5000:5000
+    command: "npm start"
+  #app:
+    #build: ./app
+    #volumes:
+      #- ./app:/app
+    #ports:
+      #- 8000:8000
+    #depends_on:
+      #- cnn-service
+      #- node-service

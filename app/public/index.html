@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Emo Player</title>
+	<script type="text/javascript" src="/eel.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<style>
+body{
+    margin: 0;
+}
+	</style>
+    </head>
+
+    <body>
+	<div class="wrapper">
+	    <div class="header">
+		<div id="home-btn" onclick="loadHomeSongs()"><i class="fa fa-home fa-2x"></i></div>
+		<h1 class="app-name">Emo Player<h1>
+	    </div>
+	    <div class="songs">
+	    </div>
+	    <img id="emotion-emoji" src="" alt="">
+	    <div class="song-and-mode">
+		<div id="song-name">
+		    Playing:&nbsp;
+		    <label>none</label>
+		</div>
+		<div id="play-mode">
+		    Queue 
+		    <input type="radio" name="mode" checked="checked" onclick="setmode(this)" value="1"> 
+		    Emotion 
+		    <input type="radio" name="mode" onclick="setmode(this)" value="2"> 
+		    Shuffle 
+		    <input type="radio" name="mode" onclick="setmode(this)" value="3">
+		</div>
+	    </div>
+	    <div class="player">
+		<div class="buttons">
+		    <div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+		    <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-2x"></i></div>
+		    <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+		</div>
+		<div class="volume-container">
+		    <i class="fa fa-volume-down"></i>
+		    <input type="range" min="1" max="100" value="99" class="volume-slider" onchange="setVolume()">
+		    <i class="fa fa-volume-up"></i>
+		</div>
+		<div class="slider-container">
+		    <div class="current-time">00:00</div>
+		    <input type="range" min="1" max="100" value="0" class="seek-slider" onchange="seekTo()">
+		    <div class="total-duration">00:00</div>
+		</div>
+	    </div>
+	</div>
+	<script src="scripts/main.js"></script>
+	</div>
+    </body>
+</html>

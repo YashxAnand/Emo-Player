@@ -1,0 +1,47 @@
+Attaching to emo-player-cnn-service-1, emo-player-node-service-1
+emo-player-cnn-service-1   | 2022-05-08 10:33:05.744604: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+emo-player-cnn-service-1   | 2022-05-08 10:33:05.744638: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+emo-player-node-service-1  | 
+emo-player-node-service-1  | > start
+emo-player-node-service-1  | > nodemon server.js
+emo-player-node-service-1  | 
+emo-player-node-service-1  | [33m[nodemon] 2.0.16[39m
+emo-player-node-service-1  | [33m[nodemon] to restart at any time, enter `rs`[39m
+emo-player-node-service-1  | [33m[nodemon] watching path(s): *.*[39m
+emo-player-node-service-1  | [33m[nodemon] watching extensions: js,mjs,json[39m
+emo-player-node-service-1  | [32m[nodemon] starting `node server.js`[39m
+emo-player-node-service-1  | Server is up and running on port: 5000!
+emo-player-cnn-service-1   | 2022-05-08 10:33:09.747777: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+emo-player-cnn-service-1   | 2022-05-08 10:33:09.747804: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+emo-player-cnn-service-1   | 2022-05-08 10:33:09.747826: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (fe2aaf817511): /proc/driver/nvidia/version does not exist
+emo-player-cnn-service-1   | 2022-05-08 10:33:09.748068: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+emo-player-cnn-service-1   | To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+emo-player-cnn-service-1   |  * Serving Flask app 'api' (lazy loading)
+emo-player-cnn-service-1   |  * Environment: production
+emo-player-cnn-service-1   |    WARNING: This is a development server. Do not use it in a production deployment.
+emo-player-cnn-service-1   |    Use a production WSGI server instead.
+emo-player-cnn-service-1   |  * Debug mode: on
+emo-player-cnn-service-1   |  * Running on all addresses (0.0.0.0)
+emo-player-cnn-service-1   |    WARNING: This is a development server. Do not use it in a production deployment.
+emo-player-cnn-service-1   |  * Running on http://127.0.0.1:3000
+emo-player-cnn-service-1   |  * Running on http://172.19.0.2:3000 (Press CTRL+C to quit)
+emo-player-cnn-service-1   |  * Restarting with stat
+emo-player-cnn-service-1   | 2022-05-08 10:33:10.648488: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+emo-player-cnn-service-1   | 2022-05-08 10:33:10.648536: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+emo-player-node-service-1  | Connected successfully
+emo-player-cnn-service-1   | 2022-05-08 10:33:15.686176: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+emo-player-cnn-service-1   | 2022-05-08 10:33:15.686275: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+emo-player-cnn-service-1   | 2022-05-08 10:33:15.686345: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (fe2aaf817511): /proc/driver/nvidia/version does not exist
+emo-player-cnn-service-1   | 2022-05-08 10:33:15.687073: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+emo-player-cnn-service-1   | To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+emo-player-cnn-service-1   |  * Debugger is active!
+emo-player-cnn-service-1   |  * Debugger PIN: 995-472-587
+emo-player-cnn-service-1   | 172.19.0.1 - - [08/May/2022 10:34:47] "POST /emotion HTTP/1.1" 200 -
+emo-player-node-service-1  | npm notice 
+emo-player-node-service-1  | npm notice New minor version of npm available! 8.5.5 -> 8.9.0
+emo-player-node-service-1  | npm notice Changelog: <https://github.com/npm/cli/releases/tag/v8.9.0>
+emo-player-node-service-1  | npm notice Run `npm install -g npm@8.9.0` to update!
+emo-player-node-service-1  | npm notice 
+emo-player-node-service-1 exited with code 143
+emo-player-node-service-1 exited with code 0
+emo-player-cnn-service-1 exited with code 0
