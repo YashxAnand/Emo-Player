@@ -1,4 +1,4 @@
-var mode = 1;
+var mode = 1; timeline is a chart that depicts how a set of resources are used over time. If you're managing a software project and want to illustrate who is doing what and when, or if you're organizing a conference and need to schedule meeting rooms, a timeline is often a reasonable visualization choice. One popular type of timeline is the Gantt chart.
 
 var next_song_pos = 0;
 var song_queue = [];
